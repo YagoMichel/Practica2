@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Mona Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Barra de Navegación */
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navbar a {
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+.navbar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Sección de Tarjetas */
+.store-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.164);
+}
+
+.store-section h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.store-cards {
+    display: grid;
+    color: #202020;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0.75rem;
+    padding: 2rem 4rem;
+}
+
+.big-card {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    transition: 200ms;
+}
+
+.small-card {
+    background-color: rgb(255, 255, 255);
+    padding: 1.5rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    transition: 200ms;
+}
+
+.big-card-image-container {
+    width: 70%;
+    align-self: center;
+}
+
+.big-card-image-container img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.small-card-icon-container {
+    width: 35%;
+    align-self: flex-end;
+}
+
+.small-card-icon-container img {
+    width: 100%;
+}
+
+.small-card:hover {
+    transform: translate(0, -3px);
+    cursor: pointer;
+}
+
+.big-card:hover {
+    transform: translate(0, -8px);
+    cursor: pointer;
+}
+
+/* Formulario */
+.form-section {
+    background-color: white;
+    padding: 2rem;
+    margin: 3rem;
+    border-radius: 10px;
+}
+
+.form-section h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 3rem;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    bottom: 0;
+}
